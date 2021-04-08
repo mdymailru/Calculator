@@ -61,7 +61,7 @@
                                                             <imageReference key="backgroundImage" image="7.square.fill" catalog="system" symbolScale="large"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="touchNumPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GoV-5H-piR"/>
+                                                            <action selector="numPadTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GoV-5H-piR"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZX-cV-sco">
@@ -71,7 +71,7 @@
                                                             <imageReference key="backgroundImage" image="4.square.fill" catalog="system" symbolScale="large"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="touchNumPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pDF-jJ-mZZ"/>
+                                                            <action selector="numPadTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pDF-jJ-mZZ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUQ-f0-hdl">
@@ -81,7 +81,7 @@
                                                             <imageReference key="backgroundImage" image="1.square.fill" catalog="system" symbolScale="large"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="touchNumPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBw-dJ-WdM"/>
+                                                            <action selector="numPadTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBw-dJ-WdM"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoI-bc-3dJ">
@@ -108,7 +108,7 @@
                                                             <imageReference key="backgroundImage" image="8.square.fill" catalog="system" symbolScale="large"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="touchNumPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KYa-sa-LLs"/>
+                                                            <action selector="numPadTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KYa-sa-LLs"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3q-sM-HTC">
@@ -118,7 +118,7 @@
                                                             <imageReference key="backgroundImage" image="5.square.fill" catalog="system" symbolScale="large"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="touchNumPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3g3-9a-61b"/>
+                                                            <action selector="numPadTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3g3-9a-61b"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B22-at-rhz">
@@ -128,7 +128,7 @@
                                                             <imageReference key="backgroundImage" image="2.square.fill" catalog="system" symbolScale="large"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="touchNumPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIO-09-nbc"/>
+                                                            <action selector="numPadTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIO-09-nbc"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icQ-fe-VNK">
@@ -138,7 +138,7 @@
                                                             <imageReference key="backgroundImage" image="0.square.fill" catalog="system" symbolScale="large"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="touchNumPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ee9-Pj-FKf"/>
+                                                            <action selector="numPadTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ee9-Pj-FKf"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -159,7 +159,7 @@
                                                             <imageReference key="backgroundImage" image="9.square.fill" catalog="system" symbolScale="large"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="touchNumPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XNs-wa-fuC"/>
+                                                            <action selector="numPadTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XNs-wa-fuC"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osJ-uB-woO">
@@ -169,7 +169,7 @@
                                                             <imageReference key="backgroundImage" image="6.square.fill" catalog="system" symbolScale="large"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="touchNumPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bqR-JU-h2W"/>
+                                                            <action selector="numPadTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bqR-JU-h2W"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0H-tc-MOV">
@@ -179,7 +179,7 @@
                                                             <imageReference key="backgroundImage" image="3.square.fill" catalog="system" symbolScale="large"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="touchNumPad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PzX-sI-247"/>
+                                                            <action selector="numPadTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PzX-sI-247"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfU-No-o8I">
@@ -193,33 +193,54 @@
                                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3iP-4G-bGt" userLabel="Stack View 4">
                                                 <rect key="frame" x="282" y="0.0" width="92" height="458.33333333333331"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEJ-Y9-rZY">
+                                                    <button opaque="NO" tag="400" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEJ-Y9-rZY">
                                                         <rect key="frame" x="0.0" y="-0.6666666666666714" width="92" height="85"/>
                                                         <state key="normal" title="/">
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <imageReference key="backgroundImage" image="divide.square" catalog="system" symbolScale="large"/>
                                                         </state>
+                                                        <state key="disabled" backgroundImage="divide.square.fill" catalog="system"/>
+                                                        <state key="selected" title="/">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <imageReference key="backgroundImage" image="divide.circle" catalog="system" symbolScale="large"/>
+                                                        </state>
+                                                        <state key="highlighted" backgroundImage="divide.square.fill" catalog="system">
+                                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="operationTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K0J-2M-fvX"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8x-et-l5p">
+                                                    <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8x-et-l5p">
                                                         <rect key="frame" x="0.0" y="93" width="92" height="85"/>
                                                         <state key="normal" title="*">
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <imageReference key="backgroundImage" image="multiply.square" catalog="system" symbolScale="large"/>
                                                         </state>
+                                                        <state key="selected" backgroundImage="multiply.square.fill" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="operationTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NkI-W0-DE0"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmL-0N-Uot">
+                                                    <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmL-0N-Uot">
                                                         <rect key="frame" x="0.0" y="186.66666666666669" width="92" height="84.999999999999972"/>
                                                         <state key="normal" title="-">
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <imageReference key="backgroundImage" image="minus.square" catalog="system" symbolScale="large"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="operationTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G12-CA-IIQ"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUq-kC-Eyg">
+                                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUq-kC-Eyg">
                                                         <rect key="frame" x="0.0" y="280.33333333333331" width="92" height="84.999999999999972"/>
                                                         <state key="normal" title="+">
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <imageReference key="backgroundImage" image="plus.square" catalog="system" symbolScale="large"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="operationTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qkY-Mj-AFH"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIa-qZ-5sN">
                                                         <rect key="frame" x="0.0" y="373.99999999999994" width="92" height="85"/>
@@ -227,6 +248,9 @@
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <imageReference key="backgroundImage" image="equal.square" catalog="system" symbolScale="large"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="resultTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e0p-d8-R4o"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -263,10 +287,13 @@
         <image name="7.square.fill" catalog="system" width="128" height="114"/>
         <image name="8.square.fill" catalog="system" width="128" height="114"/>
         <image name="9.square.fill" catalog="system" width="128" height="114"/>
+        <image name="divide.circle" catalog="system" width="128" height="121"/>
         <image name="divide.square" catalog="system" width="128" height="114"/>
+        <image name="divide.square.fill" catalog="system" width="128" height="114"/>
         <image name="equal.square" catalog="system" width="128" height="114"/>
         <image name="minus.square" catalog="system" width="128" height="114"/>
         <image name="multiply.square" catalog="system" width="128" height="114"/>
+        <image name="multiply.square.fill" catalog="system" width="128" height="114"/>
         <image name="plus.square" catalog="system" width="128" height="114"/>
         <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="linkColor">

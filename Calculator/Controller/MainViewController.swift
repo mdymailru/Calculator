@@ -11,26 +11,49 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak private var tabloLabel: UILabel!
     
-    private let calc = Calculator.shared
-    
-        
+    //private let calc = Calculator.shared
+    var calcDelegate: CalculatorDelegate?
+          
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        calcDelegate = Calculator()
        
     }
 
-    @IBAction func touchNumPad(_ sender: UIButton) {
-        if let text = tabloLabel.text {
-            tabloLabel.text =  (text != "0" ? text : "") + String(sender.tag)
-        } else {
-            tabloLabel.text = String(sender.tag)
-        }
+    @IBAction func numPadTouch(_ sender: UIButton) {
+        let text = tabloLabel.text ?? ""
+        guard let maxTablo = calcDelegate?.maxDigit,
+              text.count < maxTablo else { return }
+        
+        tabloLabel.text =  (text != "0" ? text : "") + String(sender.tag)
     }
     
     @IBAction func cleanTabloTouch(_ sender: UIButton) {
         tabloLabel.text = "0"
+    }
+    
+    @IBAction func operationTouch(_ sender: UIButton) {
+        guard let tabloText = tabloLabel.text,
+              let _ = calcDelegate?.addNewOperand(tabloText),
+              let _ = calcDelegate?.addNewOperation(sender.tag)
+        else { return }
+        
+        tabloLabel.text = nil
+        
+        //let img = UIImage(systemName: oper!.operationProp.img + ".fill")
+        
+        //sender.setBackgroundImage(img, for: .normal)
+
+    }
+    
+    @IBAction func resultTouch(_ sender: UIButton) {
+        guard let tabloText = tabloLabel.text,
+              let _ = calcDelegate?.addNewOperand(tabloText),
+              let result = calcDelegate?.calc() else { return }
+    
+        tabloLabel.text = String(result)
     }
 }
 

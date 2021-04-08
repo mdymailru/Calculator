@@ -7,43 +7,78 @@
 
 import Foundation
 
-class Calculator {
-    static var shared = Calculator()
+public protocol CalculatorDelegate: class {
+    var maxDigit: Int { get } // максимальное количество знаков на табло для операнда
     
-    var operands = [Int]()
-    var lastOperation: Operations?
+    func addNewOperation(_ tagOfOperation: Int) -> Bool
+    func addNewOperand(_ newOperand: String) -> Bool
+    func calc() -> Int?
+}
+
+class Calculator: CalculatorDelegate {
+    
+    //static var shared = Calculator()
+    
+    let maxDigit = 16 // максимальное количество знаков на табло для операнда
+    
+    private var operands = [Int]()
+    private var lastOperation: Operations?
+    
             
-    private init() {}
+    //init() {}
     
-    func calc() -> Int {
-                
-        let lastIndexOperands = self.operands.count-1
+    func addNewOperand(_ operandFromView: String) -> Bool {
+        guard let newOperand = Int(operandFromView) else { return false }
+            
+        self.operands.insert(newOperand, at: 0)
+        // debug
+            let countOperands = self.operands.count
+            print("\(countOperands):\(self.operands[0])")
+        // end debug
+        return true
+    }
+    
+    func addNewOperation(_ tagOfOperation: Int) -> Bool {
+        guard let operation = Operations(rawValue: tagOfOperation) else { return false }
         
-        let result = self.lastOperation!.operationFunc(self.operands[lastIndexOperands-1], self.operands[lastIndexOperands])
+        self.lastOperation = operation
+        // debug
+            print(operation)
+        // end debug
+        return true
+    }
+    
+    func calc() -> Int? {
+        guard let operation = self.lastOperation,
+              self.operands.count > 1 else { return nil }
               
+        let result = operation.operationProp.calc(self.operands[1], self.operands[0])
+        // debug
+            print("Calc: \(result)")
+        // end debug
         return result
     }
 }
 
-enum Operations: String {
-    case plus = "+"
-    case minus = "-"
-    case multi = "*"
-    case div = "/"
+public enum Operations: Int {
+    case plus = 100 // "+"
+    case minus = 200 // "-"
+    case multi = 300 // "*"
+    case div = 400 // "/"
     
-    var operationFunc: (Int, Int) -> Int {
+    var operationProp: (img: String, calc: (Int, Int) -> Int) {
         
         switch self {
             case .plus:
-                return { $0 + $1 }
+                return ("plus.square", { $0 + $1 })
             case .minus:
-                return { $0 - $1 }
+                return ("minus.square", { $0 - $1 })
             case .multi:
-                return { $0 * $1 }
+                return ("multiply.square", { $0 * $1 })
             case .div:
-                return { $1 != 0 ? $0 / $1 : 0 }
+                return ("divide.square", { $1 != 0 ? $0 / $1 : 0 })
         }
     }
-    
-    
 }
+
+

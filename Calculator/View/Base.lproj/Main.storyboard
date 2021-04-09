@@ -13,7 +13,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Calculator" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MainView" customModule="Calculator" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -193,7 +193,7 @@
                                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3iP-4G-bGt" userLabel="Stack View 4">
                                                 <rect key="frame" x="282" y="0.0" width="92" height="458.33333333333331"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="400" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEJ-Y9-rZY" customClass="OperationDivUIButton" customModule="Calculator" customModuleProvider="target">
+                                                    <button opaque="NO" tag="400" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEJ-Y9-rZY" customClass="OperationUIButton" customModule="Calculator" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="-0.6666666666666714" width="92" height="85"/>
                                                         <state key="normal" title="/">
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -258,29 +258,60 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SoG-tx-VgW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="lZf-lr-AMs"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Oty-SU-OXy" appends="YES" id="bUg-q0-sk8"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="SoG-tx-VgW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7z2-Z2-cZC"/>
                             <constraint firstItem="Zjo-Sj-UFT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EH7-bv-vBM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zjo-Sj-UFT" secondAttribute="trailing" constant="20" id="FX7-dn-upi"/>
                             <constraint firstItem="Zjo-Sj-UFT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ll5-Gg-FTI"/>
+                            <constraint firstItem="SoG-tx-VgW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="i35-Fs-hLR"/>
+                            <constraint firstAttribute="trailing" secondItem="SoG-tx-VgW" secondAttribute="trailing" id="mju-Wa-0A8"/>
                             <constraint firstItem="Zjo-Sj-UFT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ska-UC-r7p"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="Idt-Ow-Vaq"/>
                         <outlet property="tabloLabel" destination="fxX-jG-Vj4" id="W3g-Iv-KQk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Oty-SU-OXy">
+                    <connections>
+                        <action selector="didSwipe:" destination="BYZ-38-t0r" id="i6V-iM-Ax6"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="455" y="-139"/>
+            <point key="canvasLocation" x="453.62318840579712" y="-139.4021739130435"/>
+        </scene>
+        <!--Log View Controller-->
+        <scene sceneID="qDz-GI-K5L">
+            <objects>
+                <viewController id="fvM-iw-SiV" customClass="LogViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LmB-3n-x3f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6SU-G8-q2p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5n0-sP-uEu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="-126"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="qEJ-Y9-rZY">
-            <size key="intrinsicContentSize" width="23.666666666666668" height="20.333333333333336"/>
-        </designable>
-    </designables>
     <resources>
         <image name="0.square.fill" catalog="system" width="128" height="114"/>
         <image name="1.square.fill" catalog="system" width="128" height="114"/>
@@ -303,6 +334,9 @@
         <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

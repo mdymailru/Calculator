@@ -10,14 +10,15 @@ import UIKit
 public protocol SelectButtonDelegate: class {
     func selectButton(_ tagButton: Int)
 }
-@IBDesignable
+
 public class OperationUIButton: UIButton {
     
     //var main: MainViewController?
     
     var operation: Operations! = nil
-    @IBInspectable
-    var imgStr: String! = nil
+    
+    
+    var imgStr: String?
     
     public func selectButton(_ tagButton: Int) {
         

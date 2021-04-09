@@ -19,8 +19,7 @@ class Calculator: CalculatorDelegate {
     
     //static var shared = Calculator()
     
-    let maxDigit = 16 // максимальное количество знаков на табло для операнда
-    
+    let maxDigit = 16 
     private var operands = [Int]()
     private var lastOperation: Operations?
     

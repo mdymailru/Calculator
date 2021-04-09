@@ -9,6 +9,9 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    
+    @IBOutlet weak var mainView: MainView!
+    
     @IBOutlet weak private var tabloLabel: UILabel!
     
     //private let calc = Calculator.shared
@@ -22,6 +25,7 @@ class MainViewController: UIViewController {
        
     }
 
+  
     @IBAction func numPadTouch(_ sender: UIButton) {
         let text = tabloLabel.text ?? ""
         guard let maxTablo = calcDelegate?.maxDigit,
@@ -41,9 +45,20 @@ class MainViewController: UIViewController {
         else { return }
         
         tabloLabel.text = nil
-        
+     
+    }
+    @IBAction func didSwipe(_ sender: UISwipeGestureRecognizer) {
+        print("Pan Swipe")
+    }
+    
+    @IBAction func didTap(_ sender: UITapGestureRecognizer) {
+        print("Tap")
+    }
+    @IBAction func didPanSwipe(_ sender: UIScreenEdgePanGestureRecognizer) {
+        print("Pan Swipe")
         
     }
+    
     
     @IBAction func resultTouch(_ sender: UIButton) {
         guard let tabloText = tabloLabel.text,

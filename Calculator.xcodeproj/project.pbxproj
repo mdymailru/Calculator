@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C079980261FA870006206EB /* OperationUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C07997F261FA870006206EB /* OperationUIButton.swift */; };
+		0C07998326208DA8006206EB /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C07998226208DA8006206EB /* LogViewController.swift */; };
+		0C079986262093C9006206EB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C079985262093C9006206EB /* MainView.swift */; };
 		0C672517261DF6BE00053AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C672516261DF6BE00053AB1 /* AppDelegate.swift */; };
 		0C672519261DF6BE00053AB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C672518261DF6BE00053AB1 /* SceneDelegate.swift */; };
 		0C67251B261DF6BE00053AB1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C67251A261DF6BE00053AB1 /* MainViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C07997F261FA870006206EB /* OperationUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationUIButton.swift; sourceTree = "<group>"; };
+		0C07998226208DA8006206EB /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		0C079985262093C9006206EB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0C672513261DF6BE00053AB1 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C672516261DF6BE00053AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C672518261DF6BE00053AB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				0C67251A261DF6BE00053AB1 /* MainViewController.swift */,
+				0C07998226208DA8006206EB /* LogViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -90,6 +97,8 @@
 			children = (
 				0C672521261DF6BE00053AB1 /* LaunchScreen.storyboard */,
 				0C67251C261DF6BE00053AB1 /* Main.storyboard */,
+				0C07997F261FA870006206EB /* OperationUIButton.swift */,
+				0C079985262093C9006206EB /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,7 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C67251B261DF6BE00053AB1 /* MainViewController.swift in Sources */,
+				0C079986262093C9006206EB /* MainView.swift in Sources */,
+				0C079980261FA870006206EB /* OperationUIButton.swift in Sources */,
 				0C672517261DF6BE00053AB1 /* AppDelegate.swift in Sources */,
+				0C07998326208DA8006206EB /* LogViewController.swift in Sources */,
 				0C672519261DF6BE00053AB1 /* SceneDelegate.swift in Sources */,
 				0C67252D261DF7EC00053AB1 /* Calculation.swift in Sources */,
 			);

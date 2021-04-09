@@ -193,7 +193,7 @@
                                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3iP-4G-bGt" userLabel="Stack View 4">
                                                 <rect key="frame" x="282" y="0.0" width="92" height="458.33333333333331"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="400" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEJ-Y9-rZY">
+                                                    <button opaque="NO" tag="400" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEJ-Y9-rZY" customClass="OperationDivUIButton" customModule="Calculator" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="-0.6666666666666714" width="92" height="85"/>
                                                         <state key="normal" title="/">
                                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -276,6 +276,11 @@
             <point key="canvasLocation" x="455" y="-139"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="qEJ-Y9-rZY">
+            <size key="intrinsicContentSize" width="23.666666666666668" height="20.333333333333336"/>
+        </designable>
+    </designables>
     <resources>
         <image name="0.square.fill" catalog="system" width="128" height="114"/>
         <image name="1.square.fill" catalog="system" width="128" height="114"/>

@@ -12,10 +12,10 @@ class MainViewController: UIViewController {
     @IBOutlet weak private var tabloLabel: UILabel!
     
     //private let calc = Calculator.shared
-    var calcDelegate: CalculatorDelegate?
-          
+    private var calcDelegate: CalculatorDelegate?
+    weak var operBatton: SelectButtonDelegate?
     
-    
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         calcDelegate = Calculator()
@@ -42,10 +42,7 @@ class MainViewController: UIViewController {
         
         tabloLabel.text = nil
         
-        //let img = UIImage(systemName: oper!.operationProp.img + ".fill")
         
-        //sender.setBackgroundImage(img, for: .normal)
-
     }
     
     @IBAction func resultTouch(_ sender: UIButton) {

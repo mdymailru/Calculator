@@ -259,11 +259,11 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SoG-tx-VgW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="lZf-lr-AMs"/>
+                                    <constraint firstAttribute="height" constant="500" id="lZf-lr-AMs"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Oty-SU-OXy" appends="YES" id="bUg-q0-sk8"/>
@@ -288,7 +288,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Oty-SU-OXy">
+                <swipeGestureRecognizer direction="left" id="Oty-SU-OXy">
                     <connections>
                         <action selector="didSwipe:" destination="BYZ-38-t0r" id="i6V-iM-Ax6"/>
                     </connections>

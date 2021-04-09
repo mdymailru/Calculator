@@ -48,7 +48,7 @@ class MainViewController: UIViewController {
      
     }
     @IBAction func didSwipe(_ sender: UISwipeGestureRecognizer) {
-        print("Pan Swipe")
+        print("Swipe")
     }
     
     @IBAction func didTap(_ sender: UITapGestureRecognizer) {

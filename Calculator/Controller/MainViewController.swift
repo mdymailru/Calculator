@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
     
     //private let calc = Calculator.shared
     private var calcDelegate: CalculatorDelegate?
+    
     weak var operBatton: SelectButtonDelegate?
     
      
@@ -24,7 +25,6 @@ class MainViewController: UIViewController {
         calcDelegate = Calculator()
        
     }
-
   
     @IBAction func numPadTouch(_ sender: UIButton) {
         let text = tabloLabel.text ?? ""
@@ -45,6 +45,7 @@ class MainViewController: UIViewController {
         else { return }
         
         tabloLabel.text = nil
+        
      
     }
     @IBAction func didSwipe(_ sender: UISwipeGestureRecognizer) {

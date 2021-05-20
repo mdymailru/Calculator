@@ -15,7 +15,7 @@ public class OperationUIButton: UIButton {
     
     //var main: MainViewController?
     
-    var operation: Operations! = nil
+    var operation: Operations?
     
     
     var imgStr: String?

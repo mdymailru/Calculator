@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol CalculatorDelegate: class {
+protocol CalculatorDelegate: class {
     var maxDigit: Int { get } // максимальное количество знаков на табло для операнда
     
     func addNewOperation(_ tagOfOperation: Int) -> Bool
@@ -23,7 +23,8 @@ class Calculator: CalculatorDelegate {
     private var operands = [Int]()
     private var lastOperation: Operations?
     
-            
+    
+    
     //init() {}
     
     func addNewOperand(_ operandFromView: String) -> Bool {
@@ -50,7 +51,7 @@ class Calculator: CalculatorDelegate {
     func calc() -> Int? {
         guard let operation = self.lastOperation,
               self.operands.count > 1 else { return nil }
-              
+        
         let result = operation.operationProp.calc(self.operands[1], self.operands[0])
         // debug
             print("Calc: \(result)")
